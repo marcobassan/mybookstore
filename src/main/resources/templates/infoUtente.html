@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info utente</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th> Nome</th>
+        <th> Cognome</th>
+        <th> Username</th>
+        <th> Password</th>
+    </tr>
+
+    <tbody>
+    <tr th:object="${utente}">
+        <td><span th:text="${utente.nome}"> Title </span></td>
+        <td><span th:text="${utente.cognome}"> Author </span></td>
+        <td><span th:text="${utente.username}"> Author </span></td>
+        <td><span th:text="${utente.password}"> Author </span></td>
+    </tr>
+    </tbody>
+</table>
+<a href="controlPanel"><button>Home</button></a>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info</title>
+</head>
+<body>
+
+<table>
+    <tr>
+        <th> Id</th>
+        <th> Titolo</th>
+        <th> Autore</th>
+        <th> Prezzo</th>
+        <th> Pubblicazione</th>
+    </tr>
+    <tbody>
+    <tr th:each="libro : ${Libri}">
+        <td><span th:text="${libro.id}" name="id"> ID </span></td>
+        <td><span th:text="${libro.titolo}"> Titolo </span></td>
+        <td><span th:text="${libro.autore}"> Autore </span></td>
+        <td><span th:text="${libro.prezzo}"> Prezzo </span></td>
+        <td><span th:text="${libro.pubblicazione}"> Pubblicazione </span></td>
+    </tr>
+    </tbody>
+</table>
+<a href="controlPanel"><button>Home</button></a>
+</body>
+</html>
